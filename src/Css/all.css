@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,400;1,600&display=swap");
+:root {
+  --main-color: #393080;
+}
+
+.parent {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, skyblue, var(--main-color));
+}
+
+.main {
+  width: 950px;
+  height: 550px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 1px 1px 30px 2px white;
+}
+
+.toggle {
+  width: 50%;
+  height: 100%;
+  float: right;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.togglehead {
+  margin-top: -20px;
+  color: white;
+  font-size: 35px;
+  width: 50%;
+  text-align: center;
+}
+.togglebutton {
+  width: 200px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 20px;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.144);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.togglebutton:hover {
+  background: rgba(255, 255, 255, 0.314);
+}
+
+/* login main */
+.loginmain {
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff;
+  float: left;
+}
+
+.head {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+.head1 {
+  text-shadow: 2px 1px rgb(154, 152, 152);
+}
+/* signup */
+.signup {
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff;
+  float: left;
+}
+/* map icons */
+.other {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 50px;
+  margin: 20px auto;
+}
+.other img {
+  border: 1px solid black;
+  border-radius: 100%;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.other img:hover {
+  box-shadow: 1px 1px 20px 2px rgb(163, 161, 161);
+}
+/* hr tag */
+.text {
+  width: 100%;
+  text-align: center;
+}
+/* input feild */
+
+.input {
+  height: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  margin: 5px 0 0 50px;
+  color: black;
+  font-weight: 900;
+}
+.feild {
+  width: 80%;
+  height: 40px;
+  padding: 5px;
+  display: block;
+  margin: 0 0 0 50px;
+  border: 1px solid black;
+}
+
+/* foregt pass */
+
+.forget {
+  width: 100%;
+  height: 55px;
+}
+.forget p {
+  width: 100%;
+  margin-left: 50px;
+}
+.forget a {
+  text-decoration: none;
+  color: #6259a8;
+}
+/* buttons */
+
+.button {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  width: 200px;
+  height: 50px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* signup all items */
+
+.image {
+  width: 100%;
+  height: 100px;
+  padding: 10px 10px 0 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.profile {
+  display: none;
+  opacity: 0;
+}
+.userimg {
+  width: 100px;
+  height: 100px;
+  margin-top: -20px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+.usertext {
+  margin-top: -5px;
+}
+.top {
+  margin: 25px 20px;
+  width: 90%;
+  display: flex;
+}
+.top input {
+  width: 50%;
+  height: 30px;
+}
+.middle {
+  margin: -5px 0 0 20px;
+  width: 90%;
+  display: flex;
+}
+.middle input {
+  width: 100%;
+  height: 30px;
+}
+/* bottom */
+.bottom {
+  margin: -5px 0 0 20px;
+  height: 20px;
+  width: 90%;
+  display: flex;
+  gap: 5px;
+}
+/* profile */
+.profilemain {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(193, 232, 248);
+}
+
+/* products */
+
+.products {
+  width: 70%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+.product {
+  width: 300px;
+  height: 200px;
+}
+
+.items {
+  width: 90%;
+  height: 210px;
+  margin: 20px;
+  padding: 10px;
+  background-color: #b9b6b6;
+  overflow-x: auto;
+  display: flex;
+  gap: 30px;
+}
+
+.productimg {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* add product */
+.addproduct {
+  width: 90%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -100px;
+  margin-left: 50px;
+}
+.addproduct input,
+button {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+}
+.addproduct button {
+  width: 310px;
+  background-color: var(--main-color);
+  color: white;
+}
+/* about */
+.about {
+  width: 30%;
+  height: 100%;
+  background-color: lightgray;
+  float: right;
+}
+.aboutlogo {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.aboutlogo img {
+  width: 100px;
+  height: 100px;
+}
+.about h1 {
+  text-align: center;
+}
+.about p {
+  width: 100%;
+  text-align: center;
+}
+.input-fields {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.input-fields input {
+  width: 95%;
+  height: 30px;
+  margin: 2px;
+}
+.input-fields button {
+  width: 90%;
+  margin: 4px;
+  background-color: #4f6ca9;
+  color: white;
+  cursor: pointer;
+}
+/* cart */
+
+.cart {
+  width: 100%;
+  height: 250px;
+  padding: 20px;
+  margin-top: -50px;
+}
+.cart .cartitem {
+  width: 100%;
+  height: 200px;
+  overflow-y: scroll;
+  display: flex;
+  cursor: pointer;
+  gap:20px;
+}
+.cart .card {
+  width: 300px;
+  height: 200px;
+  margin-top: -20px;
+  border-radius: 20px;
+  overflow-y: scroll;
+
+}
+
+.card img {
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+/* forget */
+.mainforget{
+  width:250px;
+  height: 200px;
+  background-color:gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  border-radius: 20px;
+}
+.mainforget{
+  text-align: center;
+  color: white;
+  font-size: 8px;
+}
+.mainforget input{
+margin-top: 10px;;
+}
